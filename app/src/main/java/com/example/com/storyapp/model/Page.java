@@ -9,7 +9,28 @@ public class Page {
     private String text;
     private Choice choice1;
     private Choice choice2;
+    private boolean isFinal = true;
 
+    public Page(int image, String text, Choice choice1, Choice choice2) {
+        this.image = image;
+        this.text = text;
+        this.choice1 = choice1;
+        this.choice2 = choice2;
+    }
+
+    public Page(int image, String text) {
+        this.image = image;
+        this.text = text;
+        this.isFinal = true;
+    }
+
+    public boolean isFinal() {
+        return isFinal;
+    }
+
+    public void setIsFinal(boolean isFinal) {
+        this.isFinal = isFinal;
+    }
 
     public int getImage() {
         return image;

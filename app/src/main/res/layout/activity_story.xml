@@ -1,9 +1,46 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="5dp"
-    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".ui.MainActivity">
+    android:layout_height="match_parent"
+    tools:context=".ui.StoryActivity"
+    android:background="@android:color/white">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/page0"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:id="@+id/imageViewPage" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="You continueyour course to Earth. Two days later, you receive a transmission from HQ saying that they have detected some sort of anomaly on the surface of Mars near an abandoned rover. They ask you to investigate, but ultimately the decision is yours because your mission has already run much longer than planned and supplies are low."
+        android:id="@+id/textViewText"
+        android:layout_below="@+id/imageViewPage"
+        android:layout_alignParentStart="true"
+        android:padding="10dp"
+        android:lineSpacingMultiplier="1.2"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Continue home to Earth"
+        android:id="@+id/buttonChoice2"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="@android:color/white"
+        android:textColor="#FF0BB9F3" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Stop and investigate"
+        android:id="@+id/buttonChoice1"
+        android:layout_above="@+id/buttonChoice2"
+        android:layout_alignParentStart="true"
+        android:background="@android:color/white"
+        android:textColor="#0bb9f3" />
 
 
 </RelativeLayout>

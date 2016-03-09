@@ -5,7 +5,13 @@ package com.example.com.storyapp.model;
  */
 public class Choice {
     private String text;
-    private Page nextPage;
+    private int nextPage;
+
+
+    public Choice(String text, int nextPage) {
+        this.text = text;
+        this.nextPage = nextPage;
+    }
 
     public String getText() {
         return text;
@@ -15,11 +21,11 @@ public class Choice {
         this.text = text;
     }
 
-    public Page getNextPage() {
+    public int getNextPage() {
         return nextPage;
     }
 
-    public void setNextPage(Page nextPage) {
+    public void setNextPage(int nextPage) {
         this.nextPage = nextPage;
     }
 
