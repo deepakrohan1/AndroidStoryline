@@ -9,7 +9,7 @@ public class Page {
     private String text;
     private Choice choice1;
     private Choice choice2;
-    private boolean isFinal = true;
+    private boolean isFinal = false;
 
     public Page(int image, String text, Choice choice1, Choice choice2) {
         this.image = image;

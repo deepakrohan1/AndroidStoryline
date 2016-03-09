@@ -48,4 +48,8 @@ public class Story {
 
 
     }
+
+    public Page getPage(int number){
+        return pages[number];
+    }
 }
