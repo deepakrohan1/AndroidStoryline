@@ -1,14 +1,13 @@
-package com.example.com.storyapp;
+package com.example.com.storyapp.ui;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.Toast;
+
+import com.example.com.storyapp.R;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -34,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void startStory(String name){
         Intent intent = new Intent(this, StoryActivity.class);
-        intent.putExtra("name",name);
+        intent.putExtra(getString(R.string.NAME),name);
         startActivity(intent);
     }
 

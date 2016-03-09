@@ -1,0 +1,45 @@
+package com.example.com.storyapp.model;
+
+/**
+ * Created by rohan on 3/9/16.
+ */
+public class Page {
+
+    private int image;
+    private String text;
+    private Choice choice1;
+    private Choice choice2;
+
+
+    public int getImage() {
+        return image;
+    }
+
+    public void setImage(int image) {
+        this.image = image;
+    }
+
+    public String getText() {
+        return text;
+    }
+
+    public void setText(String text) {
+        this.text = text;
+    }
+
+    public Choice getChoice1() {
+        return choice1;
+    }
+
+    public void setChoice1(Choice choice1) {
+        this.choice1 = choice1;
+    }
+
+    public Choice getChoice2() {
+        return choice2;
+    }
+
+    public void setChoice2(Choice choice2) {
+        this.choice2 = choice2;
+    }
+}
